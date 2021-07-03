@@ -13,7 +13,7 @@ struct ArticleListViewModel {
 
 extension ArticleListViewModel {
     
-    var numberOfSerctions : Int {
+    var numberOfSections : Int {
         return 1
     }
     
@@ -40,14 +40,14 @@ extension ArticleViewModel {
 extension ArticleViewModel {
     
     var title: String {
-        return self.article.title
+        return self.article.title ?? "Not found"
     }
     
     var description: String {
-        return self.article.description
+        return self.article.description ?? "Not found"
     }
     
     var content: String {
-        return self.article.content
+        return self.article.content ?? "Not found"
     }
 }
